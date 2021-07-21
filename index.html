@@ -5,20 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
     <style>
-        div > .box{
-            color: red;
+        * {
+            margin: 0;
+        }
+        .box {
+            width: 60px;
+            height:60px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box1 {
+            background-color: #333;
+        }
+        .box2 {
+            background-color:orange;
+        }
+        .box3 {
+            background-color:red;
         }
     </style>
 </head>
 <body>
-    <div>
-        <div class="container">
-            123
-            <div>
-                <div class="box">A box</div>
-            </div>
-        </div>
-    </div>
+    <div class="box box1">Box 1</div>
+    <div class="box box2">Box 2</div>
+    <div class="box box3">Box 3</div>
 </body>
 </html>
