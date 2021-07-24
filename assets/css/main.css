@@ -29,11 +29,12 @@ html {
 
 #header {
     height: 46px;
-    background: #000;
+    background-color: #000;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1;
 }
 
 #nav {
@@ -111,8 +112,31 @@ html {
 }
 
 #slider {
+    position: relative;
     margin-top: 46px;
+    padding-top: 50%;
+    background: url(/assets/img/slider/slider1.jpg) top center / cover no-repeat;
 }
+
+#slider .text-content {
+    position: absolute;
+    bottom: 47px;
+    color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+#slider .text-heading {
+    font-weight: 300;
+    font-size: 24px;
+}
+
+#slider .text-description {
+    margin-top: 25px;
+    font-size: 15px;
+}
+
 
 #content {
 
