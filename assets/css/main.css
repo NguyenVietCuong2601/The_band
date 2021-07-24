@@ -30,6 +30,14 @@ html {
 #header {
     height: 46px;
     background: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#nav {
+    display: inline-block;
 }
 
 #nav, .subnav {
@@ -82,8 +90,28 @@ html {
     line-height: 38px;
 }
 
-#slider {
+#nav .nav-arrow-down {
+    font-size: 14px;
+}
 
+#header .search-btn {
+    float: right;
+    padding: 0 21px;
+}
+
+#header .search-icon {
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+}
+
+#header .search-btn:hover {
+    background-color: #F44336;
+    cursor: pointer;
+}
+
+#slider {
+    margin-top: 46px;
 }
 
 #content {
