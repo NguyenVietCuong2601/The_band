@@ -22,6 +22,9 @@ html {
 3. Mau sac
 4. Kieu dang (kieu chu, hinh tron, vuong,...)
 */
+.clear {
+    clear: both;
+}
 
 #main {
 
@@ -139,9 +142,59 @@ html {
 
 
 #content {
+    
+}
 
+#content .content-section {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 0;
+}
+
+#content .section-heading {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+
+#content .section-sub-heading {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content .about-text {
+    font-size: 15px;
+    margin-top: 25px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+#content .members-list {
+    margin-top: 48px;
+}
+
+#content .member-item {
+    float: left;
+    width: calc(100%/3);
+    text-align: center;
+}
+
+#content .member-name {
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+#content .member-img {
+    margin-top: 15px;
+    width: 154px;
+    border-radius: 4px;
 }
 
 #footer {
-
+    
 }
