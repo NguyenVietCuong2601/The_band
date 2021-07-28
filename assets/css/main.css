@@ -22,14 +22,8 @@ html {
 3. Mau sac
 4. Kieu dang (kieu chu, hinh tron, vuong,...)
 */
-.clear {
-    clear: both;
-}
 
-.text-white {
-    color: #fff !important;
-}
-
+/* Main */
 #main {
 
 }
@@ -182,12 +176,6 @@ html {
     margin-top: 48px;
 }
 
-#content .member-item {
-    float: left;
-    width: calc(100%/3);
-    text-align: center;
-}
-
 #content .member-name {
     font-size: 15px;
     margin-top: 15px;
@@ -238,14 +226,8 @@ html {
 
 /* Places */
 .places-list {
-    margin: 32px -8px 0;
+    margin-top: 32px;
     padding-bottom: 48px;
-}
-
-.place-item {
-    float: left;
-    width: calc(100%/3);
-    padding: 0 8px;
 }
 
 .place-img {
@@ -286,6 +268,7 @@ html {
     padding: 11px 16px;
     margin-top: 15px;
     border: none;
+    cursor: pointer;
 }
 
 .place-buy-btn:hover {
@@ -293,12 +276,52 @@ html {
     background-color: #ccc;
 }
 
+/* Contact form */
+.contact-content {
+    margin-top: 48px
+}
+
+.contact-info {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
+.contact-form .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.contact-form .form-submit-btn {
+    font-size: 15px;
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #000;
+    padding: 10px 14px;
+    float: right;
+    cursor: pointer;
+}
+
+.contact-form .form-submit-btn:hover {
+    color: #000;
+    background-color: #ccc;
+}
 
 /* Footer section */
 #footer {
 
 }
 
+/* Modal */
 .modal {
     position: fixed;
     top: 0;
