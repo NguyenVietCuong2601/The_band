@@ -8,6 +8,7 @@
 
 html {
     font-family: Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
 }
 
 /* 
@@ -38,6 +39,7 @@ html {
     left: 0;
     right: 0;
     z-index: 1;
+    overflow: hidden;
 }
 
 #nav {
@@ -98,11 +100,13 @@ html {
     font-size: 14px;
 }
 
+#header .mobile-menu-btn,
 #header .search-btn {
     float: right;
     padding: 0 21px;
 }
 
+#header .menu-icon,
 #header .search-icon {
     color: #fff;
     font-size: 20px;
@@ -114,6 +118,15 @@ html {
     cursor: pointer;
 }
 
+#header .mobile-menu-btn:hover {
+    background-color: #ccc;
+}
+
+#header .mobile-menu-btn:hover .menu-icon {
+    color: #000;
+}
+
+/* Slider */
 #slider {
     position: relative;
     margin-top: 46px;
@@ -140,16 +153,19 @@ html {
     font-size: 15px;
 }
 
-
+/* Content */
 #content {
     
 }
 
 #content .content-section {
     width: 800px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: 64px 0 112px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 #content .section-heading {

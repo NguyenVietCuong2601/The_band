@@ -27,3 +27,28 @@ modal.addEventListener('click', hideBuyTicket);
 modalContainer.addEventListener('click', function(event) {
     event.stopPropagation();
 })
+
+// Dong mo header menu tren mobile
+const header = document.getElementById('header');
+const mobileMenu = document.getElementById('mobile-menu');
+var headerHeight = header.clientHeight;
+
+mobileMenu.onclick = function() {
+    var isClose = header.clientHeight === headerHeight;
+    if (isClose) {
+        header.style.height = 'auto';
+    } else {
+        header.style.height = null;
+    }
+}
+
+// Tu dong dong khi chon menu
+var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+
+for (var i = 0; i < menuItems.length; i++) {
+    var menuItem = menuItems[i];
+    
+    menuItem.onclick = function() {
+        header.style.height = null;
+    }
+}
