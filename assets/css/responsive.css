@@ -11,6 +11,15 @@
 
 /* Mobile < 740px */
 @media (max-width: 740px) {
+    .s-full-width,
+    .s-col-full {
+        width: 100% !important;
+    }
+    
+    .s-mt-8 {
+        margin-top: 8px !important;   
+    }
+
     #nav {
         display: block;
     }
@@ -47,6 +56,14 @@
 
     #header .search-btn {
         display: none;
+    }
+
+    #content .member-img {
+        width: 60%;
+    }
+
+    .contact-form {
+        margin-top: 16px;
     }
 
 }
