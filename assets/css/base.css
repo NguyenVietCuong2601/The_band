@@ -57,6 +57,8 @@
     border: none;
     cursor: pointer;
     text-align: center;
+    appearance: none;
+    -webkit-appearance: none;
 }
 
 .btn:hover {
